@@ -1,0 +1,18 @@
+<%- include partials/header.ejs %>
+
+    <h1>Compose</h1>
+    <p>Pen something incredible</p>
+    <form method="post" action="/compose">
+        <div class="form-group">
+            <label>Title</label>
+            <input name="postTitle" type="text" class="form-control" placeholder="Type here...">
+        </div>
+        <div class="form-group">
+            <label>Content</label>
+            <textarea name="postBody" class="form-control textarea" aria-label="With textarea"
+                placeholder="Type here..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Publish</button>
+    </form>
+
+    <%- include partials/footer.ejs %>

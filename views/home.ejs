@@ -1,0 +1,17 @@
+<%- include partials/header.ejs %>
+
+    <h1>Home</h1>
+    <p>Dev: root/compose lets you make a post</p>
+    <p>
+        <%= content %>
+    </p>
+    <% posts.forEach((post)=> { %>
+        <h2>
+            <%=post.title%>
+        </h2>
+        <span>
+            <%=post.body.substring(0, 100) + "..." %>
+        </span>
+        <a href="/posts/<%=post.title%>">Read more</a>
+        <% }) %>
+            <%- include partials/footer.ejs %>
